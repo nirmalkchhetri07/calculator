@@ -57,3 +57,23 @@ button:active {
 .btn-operator:active {
   background-color: hsl(35, 100%, 75%);
 }
+
+@media (max-width: 460px) {
+  .calculator {
+    width: 100vw;
+    height: 100%;
+  }
+  #display {
+    width: 100vw;
+  }
+  #keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25;
+  }
+  button {
+    height: 80px;
+    width: 20vw;
+  }
+}
